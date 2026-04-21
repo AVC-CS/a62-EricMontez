@@ -16,18 +16,18 @@ int getRandom(void)
     // TODO
 }
 
-int getClosestMed(int rdnum1, int rdnum2, int rdnum3)
+int getClosestMed(int num1, int num2, int num3)
 {
     // TODO
-    double mean = (rdnum1 + rdnum2 + rdnum3) / 3.0;
-    int closest = rdnum1;
-    double minGap = abs(rdnum1 - mean);
-    if (abs(rdnum2 - mean) < minGap) {
-        closest = rdnum2;
-        minGap = abs(rdnum2 - mean);
+    double mean = (num1 + num2 + num3) / 3.0;
+    int closest = num1;
+    double minGap = abs(num1 - mean);
+    if (abs(num2 - mean) < minGap) {
+        closest = num2;
+        minGap = abs(num2 - mean);
     }
-    if (abs(rdnum3 - mean) < minGap) {
-        closest = rdnum3;
+    if (abs(num3 - mean) < minGap) {
+        closest = num3;
     }
     return closest;
     // TODO
